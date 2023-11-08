@@ -1,0 +1,17 @@
+// Anotações importantes do Trabalho de Conclusão de Curso:
+
+--> Dependências para instalar no projeto:
+
+- npm i (node modules);
+- npm i sass(scss);
+- npm i react-router-dom (sistema de rotas);
+
+// Necessário inserir:
+
+- Restante do Formulário;
+
+// Necessário Fazer:
+
+- Estilizar todo o projeto;
+- Testar a API no projeto;
+- Fazer o Formulário funcionar;

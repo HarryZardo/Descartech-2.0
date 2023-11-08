@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.projeto {
+  background: none;
+  height: 40vh;;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+
+  &__h1 {
+    padding-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  &__p {
+    padding-top: 40px;
+    color: #000000;
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    text-align: justify;
+    font-style:normal;
+    font-weight: 400;
+    line-height: 19px; /* 114.286% */
+    letter-spacing: 1.4px;
+  }
+}
+
+.titulo1 {
+  display: flex;
+  margin-left: 8%;
+  margin-right: 8%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+
+  .developer_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 100px;
+    border: 1px solid #728669;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #374133;
+
+    .developer_image {
+      width: 400px;
+      height: 400px;
+      border-radius: 20%;
+      margin-right: 100px;
+    }
+
+    .developer_info {
+      h2 {
+        font-size: 3rem;
+        margin: 20px;
+      }
+
+      p {
+        color: #000000;
+        font-family: Libre Baskerville;
+        font-size: 1rem;
+        margin: 20px;
+        text-align: justify;
+      }
+    }
+  }
+}
