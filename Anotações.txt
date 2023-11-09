@@ -1,17 +1,47 @@
 // Anotações importantes do Trabalho de Conclusão de Curso:
 
+--> Legenda de componentes:
+
+"Cors" -> Limita a quantidade de ips que entram no site;
+"EnableWebMvc" -> Migração do Model, Resource e o Front-End;
+"Configuration" -> Configuração da migração;
+
+
+
 --> Dependências para instalar no projeto:
 
 - npm i (node modules);
 - npm i sass(scss);
 - npm i react-router-dom (sistema de rotas);
+- instale a dependência: npm i axios;
+- instale a dependência: npm i react-query;
 
-// Necessário inserir:
+
+
+--> Necessário inserir no projeto:
 
 - Restante do Formulário;
+- Ficar responsivo para celular;
 
-// Necessário Fazer:
+
+--> Necessário executar no projeto:
 
 - Estilizar todo o projeto;
 - Testar a API no projeto;
 - Fazer o Formulário funcionar;
+
+
+
+--> Passo a passo para migrar a API da maneira mais facil:
+
+1 - Crie um pacote configs na API;
+2 - Crie uma classe CrosConfig dentro do pacote configs;
+3 - Escreva o código salvo no drive, salvo como "CorsConfig";
+
+
+
+--> Passo a passo para migrar a API no front-end:
+
+1 - Crie a pasta hooks no src;
+2 - No tsx principal do projeto coloque o código 2;
+
