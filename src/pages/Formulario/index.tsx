@@ -175,8 +175,8 @@ export default function Animais() {
               <div className={styles.card}>
       <h2 className={styles.card_title}>O que você deseja?</h2>
       <div className={styles.button_container}>
-        <button className={styles.action_button}>Botão 1</button>
-        <button className={styles.action_button}>Botão 2</button>
+        <button className={styles.action_button}>Descartar</button>
+        <button className={styles.action_button}>Doar</button>
       </div>
       <div className="checkbox-container">
         <div className="column">
@@ -211,6 +211,7 @@ export default function Animais() {
             <input type="checkbox" /> Opção 8
           </label>
         </div>
+
       </div>
     </div>
       </div>
