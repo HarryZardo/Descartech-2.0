@@ -172,11 +172,47 @@ export default function Animais() {
                   </div></div>
               <div>
 
-                <div className={styles.Button}>
-                  <h1 className={styles.Button__H1}>O que você deseja?</h1>
-                  <button className={styles.Button__botao}>Descartar</button>
-                  <button className={styles.Button__botao}>Doar</button>
-                </div>
+              <div className={styles.card}>
+      <h2 className={styles.card_title}>O que você deseja?</h2>
+      <div className={styles.button_container}>
+        <button className={styles.action_button}>Botão 1</button>
+        <button className={styles.action_button}>Botão 2</button>
+      </div>
+      <div className="checkbox-container">
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 1
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 2
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 3
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 4
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 5
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 6
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+      </div>
+    </div>
       </div>
         <Footer/>
       </div>
