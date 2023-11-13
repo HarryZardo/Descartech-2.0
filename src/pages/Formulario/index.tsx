@@ -178,7 +178,7 @@ export default function Animais() {
         <button className={styles.action_button}>Descartar</button>
         <button className={styles.action_button}>Doar</button>
       </div>
-      <div className="checkbox-container">
+      <div className={styles.checkbox}>
         <div className="column">
           <label>
             <input type="checkbox" /> Opção 1
@@ -201,6 +201,94 @@ export default function Animais() {
           </label>
           <label>
             <input type="checkbox" /> Opção 6
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Opção 7
+          </label>
+          <label>
+            <input type="checkbox" /> Opção 8
           </label>
         </div>
         <div className="column">
