@@ -181,122 +181,122 @@ export default function Animais() {
       <div className={styles.checkbox}>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 1
+            <input type="checkbox" /> Celular
           </label>
           <label>
-            <input type="checkbox" /> Opção 2
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 3
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 4
+            <input type="checkbox" /> Tablet
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 5
+            <input type="checkbox" /> Teclado
           </label>
           <label>
-            <input type="checkbox" /> Opção 6
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 7
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Mouse
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 7
+            <input type="checkbox" /> Televisão
           </label>
           <label>
-            <input type="checkbox" /> Opção 8
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 7
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Monitor
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 7
+            <input type="checkbox" /> Calculadora
           </label>
           <label>
-            <input type="checkbox" /> Opção 8
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 7
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Fone de Ouvido
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 7
+            <input type="checkbox" /> Geladeira
           </label>
           <label>
-            <input type="checkbox" /> Opção 8
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 7
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Ventilador
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 7
+            <input type="checkbox" /> Estabilizador
           </label>
           <label>
-            <input type="checkbox" /> Opção 8
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 7
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Cabo de Rede
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 7
+            <input type="checkbox" /> Lâmpada
           </label>
           <label>
-            <input type="checkbox" /> Opção 8
-          </label>
-        </div>
-        <div className="column">
-          <label>
-            <input type="checkbox" /> Opção 7
-          </label>
-          <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Carregador
           </label>
         </div>
         <div className="column">
           <label>
-            <input type="checkbox" /> Opção 7
+            <input type="checkbox" /> Forno Elétrico
           </label>
           <label>
-            <input type="checkbox" /> Opção 8
+            <input type="checkbox" /> Impressora
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> GPS para carro
+          </label>
+          <label>
+            <input type="checkbox" /> Câmera termográfica
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Caixa de som Bluetooth
+          </label>
+          <label>
+            <input type="checkbox" /> Console de videogame
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Câmera de segurança
+          </label>
+          <label>
+            <input type="checkbox" /> Scanner de documentos
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Projetor
+          </label>
+          <label>
+            <input type="checkbox" /> Kindle
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Lâmpada LED
+          </label>
+          <label>
+            <input type="checkbox" /> Monitor de bebê
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Termômetro infravermelho
+          </label>
+          <label>
+            <input type="checkbox" /> Mesa digitalizadora
+          </label>
+        </div>
+        <div className="column">
+          <label>
+            <input type="checkbox" /> Máquina de lavar roupa
+          </label>
+          <label>
+            <input type="checkbox" /> Outros
           </label>
         </div>
 
