@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .toolbar{
-  background-color: #2B2B1B;
+  background-color: #182625;
   display: flex;
   box-sizing: border-box;
   height: 140px;
@@ -15,11 +17,12 @@
   display: flex;
   align-items: center;
 
-  h1{
+  &__h1{
    color:azure;
    font-size: 40px;
    padding-left: 3%;
-
+   padding-top: 40px;
+   font-family: 'Roboto Slab', serif;
   }
 
   &__logo{
@@ -53,6 +56,7 @@
     align-items: center;
     gap: 90px;
     padding-inline: 20%;
+    font-family: 'Roboto Slab', serif;
   }
 
   &__searchBox{

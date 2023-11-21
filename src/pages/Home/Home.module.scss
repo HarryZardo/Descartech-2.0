@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // Estilizando o Fundo da Página:
 
 .back{
     height: 100%;
     width: 100%;
-    background-color: #FBFFF6;
+    background-color: #5b748a;
 }
 
 // Estilizando o Banner Principal
@@ -32,7 +32,7 @@
     &__text{
         display: flex;
         position: absolute;
-
+        font-family: 'Roboto Slab', serif;
         flex-direction: column;
         gap: 10px;
     }
@@ -42,16 +42,15 @@
 
 .h1{
     color: white;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 80px;
     font-weight: 900;
 }
 
 // Estilizando fundo das informações:
 .informContainer{
-    background-color: #FBFFF6;
+    background-color: #5b748a;
     height: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     position: relative;
 }
 

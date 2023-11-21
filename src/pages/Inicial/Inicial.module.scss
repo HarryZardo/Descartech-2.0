@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .house {
   display: flex;
@@ -8,45 +9,47 @@
   &__text {
     position: static;
     margin-top: 200px;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
-    font-size: 65px;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 90px;
+    font-family: 'Roboto Slab', serif;
     padding-top: 80px;
     padding-left: 120px;
     display: flex;
-    color: #264A2C;
+    color: #182625;
   }
 
    &__ellipse {
      flex-direction: row;
      align-content: flex-end;
      margin-left: 50%;
-     margin-top: 350px;
+     margin-top: 450px;
      width: 50%;
-     height: 500px;
+     height: 400px;
      position: absolute;
    }
 }
 
 
 .green_button {
-  background-color: #5B816E;
+  background-color: #182625;
   color:aliceblue;
   padding: 10px 20px;
   margin: 5px;
   border: none;
   cursor: pointer;
-  margin-top: 250px;
+  margin-top: 180px;
   margin-left: 60px;
+
     font-size: 25px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
     width: 240px;
     height: 55px;
     flex-direction: row;
     align-items: center;
     margin: 10px;
-    margin-top: 250px;
+    margin-top: 180px;
     margin-left: 120px;
     cursor: pointer;
 }

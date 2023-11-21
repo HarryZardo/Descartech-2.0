@@ -10,7 +10,7 @@ export default function Toolbar() {
         <Link to="/">
         <img src={logo} alt="Logo Descartech" className={styles.start__logo} />
         </Link>
-          <h1>Descartech</h1>
+          <h1 className={styles.start__h1}>Descartech</h1>
       </div>
       <div></div>
 
