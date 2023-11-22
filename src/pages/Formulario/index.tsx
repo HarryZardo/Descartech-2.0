@@ -221,114 +221,142 @@ export default function Animais() {
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Teclado
+                <input type="checkbox" checked={checkboxes['teclado']}
+          onChange={() => handleCheckboxChange('teclado')}/> Teclado
               </label>
               <label>
-                <input type="checkbox" /> Mouse
-              </label>
-            </div>
-            <div className="column">
-              <label>
-                <input type="checkbox" /> Televisão
-              </label>
-              <label>
-                <input type="checkbox" /> Monitor
+                <input type="checkbox" checked={checkboxes['mouse']}
+          onChange={() => handleCheckboxChange('mouse')}/> Mouse
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Calculadora
+                <input type="checkbox" checked={checkboxes['televisão']}
+          onChange={() => handleCheckboxChange('televisão')}/> Televisão
               </label>
               <label>
-                <input type="checkbox" /> Fone de Ouvido
-              </label>
-            </div>
-            <div className="column">
-              <label>
-                <input type="checkbox" /> Geladeira
-              </label>
-              <label>
-                <input type="checkbox" /> Ventilador
+                <input type="checkbox" checked={checkboxes['monitor']}
+          onChange={() => handleCheckboxChange('monitor')}/> Monitor
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Estabilizador
+                <input type="checkbox" checked={checkboxes['calculadora']}
+          onChange={() => handleCheckboxChange('calculadora')}/> Calculadora
               </label>
               <label>
-                <input type="checkbox" /> Cabo de Rede
-              </label>
-            </div>
-            <div className="column">
-              <label>
-                <input type="checkbox" /> Lâmpada
-              </label>
-              <label>
-                <input type="checkbox" /> Carregador
+                <input type="checkbox" checked={checkboxes['fone de ouvido']}
+          onChange={() => handleCheckboxChange('fone de ouvido')}/> Fone de Ouvido
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Forno Elétrico
+                <input type="checkbox" checked={checkboxes['geladeira']}
+          onChange={() => handleCheckboxChange('geladeira')}/> Geladeira
               </label>
               <label>
-                <input type="checkbox" /> Impressora
-              </label>
-            </div>
-            <div className="column">
-              <label>
-                <input type="checkbox" /> GPS para carro
-              </label>
-              <label>
-                <input type="checkbox" /> Câmera termográfica
+                <input type="checkbox" checked={checkboxes['ventilador']}
+          onChange={() => handleCheckboxChange('ventilador')}/> Ventilador
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Caixa de som Bluetooth
+                <input type="checkbox" checked={checkboxes['estabilizador']}
+          onChange={() => handleCheckboxChange('estabilizador')}/> Estabilizador
               </label>
               <label>
-                <input type="checkbox" /> Console de videogame
-              </label>
-            </div>
-            <div className="column">
-              <label>
-                <input type="checkbox" /> Câmera de segurança
-              </label>
-              <label>
-                <input type="checkbox" /> Scanner de documentos
+                <input type="checkbox" checked={checkboxes['cabo de rede']}
+          onChange={() => handleCheckboxChange('cabo de rede')}/> Cabo de Rede
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Projetor
+                <input type="checkbox" checked={checkboxes['lâmpada']}
+          onChange={() => handleCheckboxChange('lâmpada')}/> Lâmpada
               </label>
               <label>
-                <input type="checkbox" /> Kindle
-              </label>
-            </div>
-            <div className="column">
-              <label>
-                <input type="checkbox" /> Lâmpada LED
-              </label>
-              <label>
-                <input type="checkbox" /> Monitor de bebê
+                <input type="checkbox" checked={checkboxes['carregador']}
+          onChange={() => handleCheckboxChange('carregador')}/> Carregador
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Termômetro infravermelho
+                <input type="checkbox" checked={checkboxes['forno elétrico']}
+          onChange={() => handleCheckboxChange('forno elétrico')}/> Forno Elétrico
               </label>
               <label>
-                <input type="checkbox" /> Mesa digitalizadora
+                <input type="checkbox" checked={checkboxes['impressora']}
+          onChange={() => handleCheckboxChange('impressora')}/> Impressora
               </label>
             </div>
             <div className="column">
               <label>
-                <input type="checkbox" /> Máquina de lavar roupa
+                <input type="checkbox" checked={checkboxes['gps para carro']}
+          onChange={() => handleCheckboxChange('gps para carro')}/> GPS para carro
               </label>
               <label>
-                <input type="checkbox" /> Outros
+                <input type="checkbox" checked={checkboxes['câmera termográfica']}
+          onChange={() => handleCheckboxChange('câmera termográfica')}/> Câmera termográfica
+              </label>
+            </div>
+            <div className="column">
+              <label>
+                <input type="checkbox" checked={checkboxes['caixa de som']}
+          onChange={() => handleCheckboxChange('caixa de som')}/> Caixa de som Bluetooth
+              </label>
+              <label>
+                <input type="checkbox" checked={checkboxes['console de videogame']}
+          onChange={() => handleCheckboxChange('console de videogame')}/> Console de videogame
+              </label>
+            </div>
+            <div className="column">
+              <label>
+                <input type="checkbox" checked={checkboxes['câmera de segurança']}
+          onChange={() => handleCheckboxChange('câmera de segurança')}/> Câmera de segurança
+              </label>
+              <label>
+                <input type="checkbox" checked={checkboxes['scanner de documentos']}
+          onChange={() => handleCheckboxChange('scanner de documentos')}/> Scanner de documentos
+              </label>
+            </div>
+            <div className="column">
+              <label>
+                <input type="checkbox" checked={checkboxes['projetor']}
+          onChange={() => handleCheckboxChange('projetor')}/> Projetor
+              </label>
+              <label>
+                <input type="checkbox" checked={checkboxes['kindle']}
+          onChange={() => handleCheckboxChange('kindle')}/> Kindle
+              </label>
+            </div>
+            <div className="column">
+              <label>
+                <input type="checkbox" checked={checkboxes['lâmpada led']}
+          onChange={() => handleCheckboxChange('lâmpada led')}/> Lâmpada LED
+              </label>
+              <label>
+                <input type="checkbox" checked={checkboxes['monitor de bebê']}
+          onChange={() => handleCheckboxChange('monitor de bebê')}/> Monitor de bebê
+              </label>
+            </div>
+            <div className="column">
+              <label>
+                <input type="checkbox" checked={checkboxes['termômetro infravermelho']}
+          onChange={() => handleCheckboxChange('termômetro infravermelho')}/> Termômetro infravermelho
+              </label>
+              <label>
+                <input type="checkbox" checked={checkboxes['mesa digitalizadora']}
+          onChange={() => handleCheckboxChange('mesa digitalizadora')} /> Mesa digitalizadora
+              </label>
+            </div>
+            <div className="column">
+              <label>
+                <input type="checkbox" checked={checkboxes['máquina de lavar roupa']}
+          onChange={() => handleCheckboxChange('máquina de lavar roupa')}/> Máquina de lavar roupa
+              </label>
+              <label>
+                <input type="checkbox" checked={checkboxes['outros']}
+          onChange={() => handleCheckboxChange('outros')}/> Outros
               </label>
             </div>
           </div>
