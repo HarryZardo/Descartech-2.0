@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 .projeto {
   background: none;
   height: 40vh;;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,19 +15,19 @@
 
   &__h1 {
     padding-top: 20px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 50px;
     font-weight: 600;
   }
   &__p {
-    padding-top: 40px;
+    padding-top: 20px;
     color: #000000;
-    font-family: Libre Baskerville;
-    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
     text-align: justify;
     font-style:normal;
     font-weight: 400;
-    line-height: 19px; /* 114.286% */
+    line-height: 25px; /* 114.286% */
     letter-spacing: 1.4px;
   }
 }
@@ -38,7 +39,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 50px;
   font-weight: 600;
 }
@@ -55,9 +56,9 @@
     align-items: center;
     margin: 20px;
     padding: 100px;
-    border: 1px solid #728669;
+    border: 1px solid #59747A;
     border-radius: 10px;
-    box-shadow: 0 4px 6px #374133;
+    box-shadow: 0 4px 6px #2F3D40;
 
     .developer_image {
       width: 400px;
@@ -68,15 +69,18 @@
 
     .developer_info {
       h2 {
-        font-size: 3rem;
-        margin: 20px;
+        font-size: 50px;
+        margin: 10px;
+        font-family: 'Roboto Slab', serif;
+        font-style: italic;
+        font-weight: 500;
       }
 
       p {
         color: #000000;
-        font-family: Libre Baskerville;
-        font-size: 1rem;
-        margin: 20px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 23px;
+        margin: 10px;
         text-align: justify;
       }
     }
