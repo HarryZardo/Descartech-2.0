@@ -41,28 +41,21 @@ export default function Home() {
               <li className={styles.informBox__subtitle}>
                 Coleta - Os dispositivos eletrônicos obsoletos ou danificados são coletados em centros de reciclagem, locais de coleta de eletrônicos ou por empresas especializadas.
               </li>
-              <br></br>
               <li className={styles.informBox__subtitle}>
                 Triagem - Os eletrônicos são separados por tipo e condição, identificando aqueles que podem ser reutilizados, reciclados ou que precisam de tratamento especial devido a substâncias tóxicas.
               </li>
-
-              <br></br>
               <li className={styles.informBox__subtitle}>
                 Desmontagem: Os dispositivos são desmontados para separar componentes, como placas de circuito, baterias e fios, que podem ser reciclados separadamente.
               </li>
-              <br></br>
               <li className={styles.informBox__subtitle}>
                 Reciclagem: Os materiais recicláveis, como metais preciosos, plásticos e vidros, são processados e enviados para serem reutilizados na fabricação de novos produtos eletrônicos.
               </li>
-              <br></br>
               <li className={styles.informBox__subtitle}>
                 Tratamento de substâncias perigosas: Componentes com substâncias tóxicas, como mercúrio e chumbo, são tratados de forma segura para evitar a contaminação do meio ambiente.
               </li>
-              <br></br>
               <li className={styles.informBox__subtitle}>
                 Recondicionamento: Dispositivos eletrônicos em boas condições podem ser recondicionados e revendidos ou doados.
               </li>
-              <br></br>
               <li className={styles.informBox__subtitle}>
                 Destinação final: Os resíduos finais são encaminhados para aterros sanitários apropriados ou incinerados de forma controlada, quando não podem ser reciclados.
               </li>
