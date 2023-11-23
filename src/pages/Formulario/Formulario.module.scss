@@ -20,7 +20,7 @@
     padding-right: 3%;
 
     &__text{
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
         font-weight: 900;
         font-family: 'roboto', serif;
@@ -63,9 +63,10 @@
 
 
        &__label{
-           font-size: 20px;
+           font-size: 30px;
            font-weight: 600;
-           color: rgb(8, 8, 8);
+           color: rgb(0, 0, 0);
+           font-family: 'roboto', serif;
            padding: 8px;
        }
    }
@@ -75,7 +76,7 @@
 
 .card {
   background-color: #5B86AC;
-  padding: 5px;
+  padding: 4px;
   border-radius: 10px;
   text-align: center;
   width: 1300px;
@@ -118,10 +119,10 @@
 
 .checkbox {
   margin-top: 20px;
-  margin-left: 205px;
+  margin-left: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 7px; /* Aumentado o espaçamento entre as checkboxes */
+  gap: 10px; /* Aumentado o espaçamento entre as checkboxes */
   padding: 10px;
   font-size: 1.3rem;
   justify-content: center; /* Adicionado para centralizar o conteúdo */
@@ -173,16 +174,15 @@ input[type="checkbox"]:checked + label span {
 // estilizando o alert:
 
 .styled-alert {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 100%;
+  left: 100%;
   transform: translate(-50%, -50%);
   padding: 15px;
-  background-color: blue;
+  background-color: #3D5A73;
   color: white;
   border-radius: 5px;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
   z-index: 999;
 }
 
