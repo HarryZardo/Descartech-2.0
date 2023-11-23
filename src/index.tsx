@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Formulario from "./pages/Formulario";
 import Doacoes from "./pages/Doacoes";
 import Sobre from "./pages/Sobre";
+import Senha from "./pages/Senha/resetsenha";
 
 // Configurando as Rotas entre as Páginas (Router):
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "sobre",
     element: <Sobre />
+  },
+  {
+    path: "senha",
+    element: <Senha />
   },
 ]);
 

@@ -1,9 +1,27 @@
+import React, { useState } from "react";
 import Toolbar from "../../components/Toolbar";
 import styles from "./Login.module.scss";
 import Logo from "../../assets/components_img/logo2.png";
 import { Link } from "react-router-dom";
 
 export default function Login() {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleLogin = () => {
+    console.log("Dados do usuário para login:", formData);
+  };
+
   return (
     <body>
       <Toolbar />
@@ -13,7 +31,7 @@ export default function Login() {
             <div className={styles.h1}>ENTRAR!</div>
 
             <div className={styles.form}>
-              <form action="#">
+              <form>
                 <div className={styles.inputGroup}>
                   <div className={styles.inputBox}>
                     <label htmlFor="nome" className={styles.inputBox__label}>
@@ -27,6 +45,8 @@ export default function Login() {
                       placeholder="Digite seu email"
                       required
                       className={styles.inputBox__input}
+                      value={formData.email}
+                      onChange={handleChange}
                     ></input>
                   </div>
 
@@ -45,10 +65,15 @@ export default function Login() {
                       placeholder="Digite sua senha"
                       required
                       className={styles.inputBox__input}
+                      value={formData.password}
+                      onChange={handleChange}
                     ></input>
                   </div>
 
-                  <h1 className={styles.esqueceuSenha}>Esqueçeu a senha?</h1>
+<Link to={"/senha"}>
+<h1 className={styles.esqueceuSenha}>Esqueceu a senha?</h1>
+</Link>
+
                 </div>
 
                 <Link to={"/cadastro"}>
@@ -60,12 +85,11 @@ export default function Login() {
                 </Link>
 
                 <Link to={"/home"}>
-                <div className={styles.continueButton}>
-                  <button className={styles.continueButton__btn}>
-                    ENTRAR
-                  </button>
+                <div className={styles.continueButton} onClick={handleLogin}>
+                  <button className={styles.continueButton__btn}>ENTRAR</button>
                 </div>
                 </Link>
+
               </form>
             </div>
           </div>

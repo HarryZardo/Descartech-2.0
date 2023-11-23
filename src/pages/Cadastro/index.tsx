@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import styles from "./Cadastro.module.scss";
 import ImageInput from "./ImageInput/imageinput";
 import Toolbar from "../../components/Toolbar";
@@ -5,6 +6,29 @@ import logo2 from "../../assets/components_img/logo2.png";
 import { Link } from "react-router-dom";
 
 export default function Cadastro() {
+
+  const [formData, setFormData] = useState({
+    nome: "",
+    sobrenome: "",
+    email: "",
+    number: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleRegister = () => {
+    // Aqui você pode implementar a lógica para enviar os dados do usuário para o backend
+    console.log("Dados do usuário cadastrado:", formData);
+  };
+
   return (
     <body>
       <Toolbar />
@@ -44,12 +68,14 @@ export default function Cadastro() {
                     Nome{" "}
                   </label>
                   <input
-                    id="nome"
-                    type="text"
-                    name="nome"
-                    placeholder="Digite seu nome"
-                    required
-                    className={styles.inputBox__input}
+                         id="nome"
+                         type="text"
+                         name="nome"
+                         placeholder="Digite seu nome"
+                         required
+                         className={styles.inputBox__input}
+                         value={formData.nome}
+                         onChange={handleChange}
                   ></input>
                 </div>
 
@@ -65,6 +91,8 @@ export default function Cadastro() {
                     placeholder="Digite seu Sobrenome"
                     required
                     className={styles.inputBox__input}
+                    value={formData.sobrenome}
+                    onChange={handleChange}
                   ></input>
                 </div>
 
@@ -74,12 +102,14 @@ export default function Cadastro() {
                     Email{""}
                   </label>
                   <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Digite seu email"
-                    required
-                    className={styles.inputBox__input}
+               id="email"
+               type="text"
+               name="email"
+               placeholder="Digite seu E-mail"
+               required
+               className={styles.inputBox__input}
+               value={formData.email}
+               onChange={handleChange}
                   ></input>
                 </div>
 
@@ -89,12 +119,14 @@ export default function Cadastro() {
                     Telefone{" "}
                   </label>
                   <input
-                    id="number"
-                    type="text"
-                    name="number"
-                    placeholder="(xx) xxxxx-xxxx"
-                    required
-                    className={styles.inputBox__input}
+                          id="number"
+                          type="text"
+                          name="number"
+                          placeholder="Digite seu número"
+                          required
+                          className={styles.inputBox__input}
+                          value={formData.number}
+                          onChange={handleChange}
                   ></input>
                 </div>
 
@@ -104,12 +136,14 @@ export default function Cadastro() {
                     Senha{" "}
                   </label>
                   <input
-                    id="password"
-                    type="password"
-                    name="password"
-                    placeholder="Digite sua senha"
-                    required
-                    className={styles.inputBox__input}
+                         id="password"
+                         type="text"
+                         name="password"
+                         placeholder="Digite sua senha"
+                         required
+                         className={styles.inputBox__input}
+                         value={formData.password}
+                         onChange={handleChange}
                   ></input>
                 </div>
 
@@ -119,21 +153,26 @@ export default function Cadastro() {
                     className={styles.inputBox__label}
                   >
                     {" "}
-                    Confirme sua senha{" "}
+                    Confirme sua senha{""}
                   </label>
                   <input
-                    id="Confirmpassword"
-                    type="password"
-                    name="password"
-                    placeholder="Confirme sua senha"
-                    required
-                    className={styles.inputBox__input}
+                     id="confirmpassword"
+                     type="text"
+                     name="confirmpassword"
+                     placeholder="Confirme sua senha"
+                     required
+                     className={styles.inputBox__input}
+                     value={formData.confirmPassword}
+                     onChange={handleChange}
                   ></input>
                 </div>
               </div>
               <Link to={"/home"}>
                 <div className={styles.continueButton}>
-                  <button className={styles.continueButton__btn}>
+                  <button
+                    className={styles.continueButton__btn}
+                    onClick={handleRegister}
+                  >
                     CONTINUE
                   </button>
                 </div>
