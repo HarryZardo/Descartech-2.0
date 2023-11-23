@@ -21,8 +21,11 @@ export default function Animais() {
       alert('Enviado com sucesso');
       setCheckboxes({});
       setDescartarSelecionado(false);
+    } else if (selectedCheckboxes.length > 0) {
+      setCheckboxes({});
     } else {
-      alert('Por favor, selecione uma das opções antes de enviar.');
+      alert('Por favor, selecione pelo menos uma opção antes de enviar.');
+      setCheckboxes({});
     }
   };
 
