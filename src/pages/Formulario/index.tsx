@@ -2,8 +2,14 @@ import Toolbar from "../../components/Toolbar";
 import styles from "./Formulario.module.scss";
 import Footer from "../../components/Footer";
 import React, { useState } from 'react';
+import { getDescarte } from "../../services/descarte";
+import { getUsuario } from "../../services/usuario";
 
 export default function Animais() {
+  const data = getUsuario();
+  console.log(data)
+
+
     // Estado local para controlar os checkboxes selecionados
     const [checkboxes, setCheckboxes] = useState<Record<string, boolean>>({});
     const [descartarSelecionado, setDescartarSelecionado] = useState(false);

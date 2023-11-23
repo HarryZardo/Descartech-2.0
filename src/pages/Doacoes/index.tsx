@@ -4,8 +4,14 @@ import Footer from "../../components/Footer";
 import user1 from "../../assets/usuários/user1.png";
 import user2 from "../../assets/usuários/user2.png";
 import user3 from "../../assets/usuários/user3.png";
+import { getDoacoes } from "../../services/doacoes";
+
+
 
 export default function Doacoes() {
+ const data = getDoacoes();
+ console.log(data)
+
     return (
       <body>
     <header>
