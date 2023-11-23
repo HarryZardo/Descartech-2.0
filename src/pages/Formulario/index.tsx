@@ -2,45 +2,30 @@ import Toolbar from "../../components/Toolbar";
 import styles from "./Formulario.module.scss";
 import Footer from "../../components/Footer";
 import React, { useState } from 'react';
-import { getDescarte } from "../../services/descarte";
-import { getUsuario } from "../../services/usuario";
 
 export default function Animais() {
-  const data = getUsuario();
-  console.log(data)
+  const [checkboxes, setCheckboxes] = useState<Record<string, boolean>>({});
+  const [descartarSelecionado, setDescartarSelecionado] = useState(false);
 
+  const handleCheckboxChange = (id: string) => {
+    setCheckboxes((prevCheckboxes) => ({
+      ...prevCheckboxes,
+      [id]: !prevCheckboxes[id],
+    }));
+  };
 
-    // Estado local para controlar os checkboxes selecionados
-    const [checkboxes, setCheckboxes] = useState<Record<string, boolean>>({});
-    const [descartarSelecionado, setDescartarSelecionado] = useState(false);
+  const handleButtonClick = () => {
+    const selectedCheckboxes = Object.keys(checkboxes).filter((id) => checkboxes[id]);
 
-    // Função para lidar com a seleção/deseleção de um checkbox
-    const handleCheckboxChange = (id: string) => {
-      setCheckboxes((prevCheckboxes) => ({
-        ...prevCheckboxes,
-        [id]: !prevCheckboxes[id],
-      }));
-    };
-
-
-
-    // Função para lidar com o clique no botão
-    const handleButtonClick = () => {
-      // Verifique os checkboxes selecionados
-      const selectedCheckboxes = Object.keys(checkboxes).filter((id) => checkboxes[id]);
-
-
-      if (descartarSelecionado) {
-        alert('Enviado com sucesso');
-        setCheckboxes({});
-        setDescartarSelecionado(false);
-      } else {
-        alert('Por favor, selecione uma das opções antes de enviar.');
-      }
-
-      // Desmarque os checkboxes selecionados
+    if (descartarSelecionado) {
+      alert('Enviado com sucesso');
       setCheckboxes({});
-    };
+      setDescartarSelecionado(false);
+    } else {
+      alert('Por favor, selecione uma das opções antes de enviar.');
+    }
+  };
+
 
   return (
     <div className={styles.back}>
@@ -210,7 +195,7 @@ export default function Animais() {
           <h2 className={styles.card_title}>O que você deseja?</h2>
           <div className={styles.button_container}>
             <button onClick={() => setDescartarSelecionado(true)} className={styles.action_button}>Descartar</button>
-            <button className={styles.action_button}>Doar</button>
+            <button  onClick={() => setDescartarSelecionado(false)} className={styles.action_button}>Doar</button>
           </div>
           <div className={styles.checkbox}>
             <div className="column">
