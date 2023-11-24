@@ -22,14 +22,14 @@ export default function Animais() {
       setCheckboxes({});
       setDescartarSelecionado(false);
     } else if (selectedCheckboxes.length > 0) {
+      // Ação de enviar o formulário
       setCheckboxes({});
     } else {
+      // Alerta quando nenhuma opção é selecionada
       alert('Por favor, selecione pelo menos uma opção antes de enviar.');
-      setCheckboxes({});
     }
   };
-
-
+  
   return (
     <div className={styles.back}>
       <Toolbar />
