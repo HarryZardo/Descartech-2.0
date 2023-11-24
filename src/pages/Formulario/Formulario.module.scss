@@ -19,13 +19,14 @@
 .dispBox{
     padding-top: 3rem;
     padding-right: 3%;
+    padding-left: 3%;
 
     &__text{
         font-size: 50px;
         text-align: center;
         font-weight: 900;
         font-family: 'roboto', serif;
-        color: black;
+        color: #001210;
         text-shadow: 2px 2px 10px rgba(101, 142, 158, 0.212);
     }
 }
@@ -42,7 +43,7 @@
        margin-bottom: 1rem;
        margin-left: 70px;
        margin-right: 80px;
-
+       background-color: #5b748a;
 
        &__input{
            font-size: 15px;
@@ -66,7 +67,7 @@
        &__label{
            font-size: 30px;
            font-weight: 600;
-           color: rgb(0, 0, 0);
+           color: #192123;
            font-family: 'roboto', serif;
            padding: 8px;
        }
@@ -89,7 +90,9 @@
 .card_title {
   margin-top: 20px;
   margin-bottom: 25px;
-  font-size: 2rem;
+  font-size: 46px;
+  font-family: 'roboto', serif;
+  font-weight: 500;
 }
 
 .button_container {
@@ -99,6 +102,8 @@
   justify-content: center;
   gap: 50px;
   margin-top: 10px;
+  font-family: 'roboto', serif;
+
 }
 
 .action_button {
@@ -106,7 +111,7 @@
   width: 250px;
   border-style: solid;
   border-width: 2px;
-  border-color: #25384d;
+  border-color: #4C7090;
   background-color: #1a5083;
   padding: 0.62rem;
   border-radius: 5px;
@@ -119,13 +124,13 @@
 
 
 .checkbox {
-  margin-top: 20px;
-  margin-left: 200px;
+  margin-top: 5px;
+  margin-left: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Aumentado o espaçamento entre as checkboxes */
-  padding: 10px;
-  font-size: 1.3rem;
+  gap: 18px; /* Aumentado o espaçamento entre as checkboxes */
+  padding: 5px;
+  font-size: 25px;
   justify-content: center; /* Adicionado para centralizar o conteúdo */
 }
 
@@ -140,6 +145,7 @@ label {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-family: 'roboto', serif;
 }
 
 span {
@@ -148,14 +154,16 @@ span {
 
 /* Estilo adicional para quando a checkbox está marcada */
 input[type="checkbox"]:checked + label span {
-  font-weight: bold;
+  font-weight: 400;
   color: #1e4972; /* Cor alterada para dar destaque */
+  font-family: 'roboto', serif;
 }
 
 .centered_button_container {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  font-family: 'roboto', serif;
 
 }
 
@@ -170,6 +178,7 @@ input[type="checkbox"]:checked + label span {
   border-radius: 3px;
   cursor: pointer;
   font-size: 1.2rem;
+  font-family: 'roboto', serif;
 }
 
 // estilizando o alert:

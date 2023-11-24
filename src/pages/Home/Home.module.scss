@@ -41,15 +41,16 @@
 // Estilizando Tag "h1":
 
 .h1{
-    color: rgb(209, 209, 209);
+    color: #d1e6e3;
     font-family: 'Roboto Slab', serif;
     font-size: 90px;
     font-weight: 600;
+    opacity: 90%;
 }
 
 // Estilizando fundo das informações:
 .informContainer{
-    background-color: #5b748a;
+    background-image: url('../../assets/components_img/fundo.png.png');
     height: 100%;
     position: relative;
 }
@@ -68,10 +69,11 @@
     flex-wrap: nowrap;
     gap: 15px;
 
+
      // Titulo de Inicio das Informações:
 
     &__title{
-      color: #101a19;
+      color: #001210;
       text-align: center;
       font-family: 'Roboto Slab', serif;
       font-size: 50px;
@@ -84,11 +86,12 @@
     // Texto Informativo do Lixo Eletrônico
 
     &__subtitle{
-      color: #020202;
+      background-color: #5b748a;
+      color: #192123;
       font-family: 'Roboto Slab', serif;
-      font-size: 24px;
+      font-size: 26px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 25px; /* 114.286% */
       letter-spacing: 1.4px;
       text-align: justify;

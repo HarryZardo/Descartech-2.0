@@ -36,7 +36,7 @@ export default function Home() {
             </h3>
 
 
-            <h1 className={styles.informBox__title}> Processo do Lixo Eletrônico</h1>
+            <h1 className={styles.informBox__title}> Processo do Lixo Eletrônico.</h1>
             <h3 className={styles.informBox__subtitle}>
               <li className={styles.informBox__subtitle}>
                 Coleta - Os dispositivos eletrônicos obsoletos ou danificados são coletados em centros de reciclagem, locais de coleta de eletrônicos ou por empresas especializadas.
