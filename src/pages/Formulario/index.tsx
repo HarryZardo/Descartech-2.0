@@ -1,11 +1,38 @@
 import Toolbar from "../../components/Toolbar";
 import styles from "./Formulario.module.scss";
 import Footer from "../../components/Footer";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Animais() {
   const [checkboxes, setCheckboxes] = useState<Record<string, boolean>>({});
   const [descartarSelecionado, setDescartarSelecionado] = useState(false);
+
+   // Informações pessoais fake
+   const fakeUserInfo = {
+    nome: 'Donisete',
+    sobrenome: 'Oliveira',
+    cpf: '',
+    email: 'doniseteoliveira@gmail.com',
+    number: '(14) 98803-2407',
+    city: '',
+    endereço: '',
+    bairro: '',
+    numero: '',
+    estado: '',
+  };
+
+  useEffect(() => {
+    // Preencher automaticamente os campos do formulário com as informações fake
+    document.getElementById('nome')?.setAttribute('value', fakeUserInfo.nome);
+    document.getElementById('sobrenome')?.setAttribute('value', fakeUserInfo.sobrenome);
+    document.getElementById('cpf')?.setAttribute('value', fakeUserInfo.cpf);
+    document.getElementById('email')?.setAttribute('value', fakeUserInfo.email);
+    document.getElementById('number')?.setAttribute('value', fakeUserInfo.number);
+    document.getElementById('city')?.setAttribute('value', fakeUserInfo.city);
+    document.getElementById('endereço')?.setAttribute('value', fakeUserInfo.endereço);
+    document.getElementById('bairro')?.setAttribute('value', fakeUserInfo.bairro);
+    document.getElementById('estado')?.setAttribute('value', fakeUserInfo.estado);
+  }, []); // Executar apenas uma vez ao montar o componente
 
   const handleCheckboxChange = (id: string) => {
     setCheckboxes((prevCheckboxes) => ({

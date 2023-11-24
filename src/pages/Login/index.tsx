@@ -1,9 +1,36 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Toolbar from "../../components/Toolbar";
 import styles from "./Login.module.scss";
 import Logo from "../../assets/components_img/logo2.png";
-import { Link } from "react-router-dom";
 
 export default function Login() {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const fakeLogin = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    // Simulação de autenticação
+    if (formData.email === "doniseteoliveira@gmail.com" && formData.password === "senha123") {
+      // Aqui você pode redirecionar o usuário para a página desejada após o login bem-sucedido
+      console.log("Login bem-sucedido!");
+        window.location.href = "/home";
+    } else {
+      console.log("Login falhou. Verifique seu email e senha.");
+    }
+  };
+
   return (
     <body>
       <Toolbar />
@@ -13,10 +40,10 @@ export default function Login() {
             <div className={styles.h1}>ENTRAR!</div>
 
             <div className={styles.form}>
-              <form action="#">
+              <form onSubmit={fakeLogin}>
                 <div className={styles.inputGroup}>
                   <div className={styles.inputBox}>
-                    <label htmlFor="nome" className={styles.inputBox__label}>
+                    <label htmlFor="email" className={styles.inputBox__label}>
                       {" "}
                       Email{" "}
                     </label>
@@ -27,14 +54,13 @@ export default function Login() {
                       placeholder="Digite seu email"
                       required
                       className={styles.inputBox__input}
+                      value={formData.email}
+                      onChange={handleChange}
                     ></input>
                   </div>
 
                   <div className={styles.inputBox}>
-                    <label
-                      htmlFor="password"
-                      className={styles.inputBox__label}
-                    >
+                    <label htmlFor="password" className={styles.inputBox__label}>
                       {" "}
                       Senha{" "}
                     </label>
@@ -45,10 +71,12 @@ export default function Login() {
                       placeholder="Digite sua senha"
                       required
                       className={styles.inputBox__input}
+                      value={formData.password}
+                      onChange={handleChange}
                     ></input>
                   </div>
 
-                  <h1 className={styles.esqueceuSenha}>Esqueçeu a senha?</h1>
+                  <h1 className={styles.esqueceuSenha}>Esqueceu a senha?</h1>
                 </div>
 
                 <Link to={"/cadastro"}>
@@ -59,13 +87,11 @@ export default function Login() {
                   </div>
                 </Link>
 
-                <Link to={"/home"}>
                 <div className={styles.continueButton}>
-                  <button className={styles.continueButton__btn}>
+                  <button type="submit" className={styles.continueButton__btn}>
                     ENTRAR
                   </button>
                 </div>
-                </Link>
               </form>
             </div>
           </div>

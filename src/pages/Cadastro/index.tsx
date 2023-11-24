@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import styles from "./Cadastro.module.scss";
 import ImageInput from "./ImageInput/imageinput";
 import Toolbar from "../../components/Toolbar";
@@ -5,6 +6,45 @@ import logo2 from "../../assets/components_img/logo2.png";
 import { Link } from "react-router-dom";
 
 export default function Cadastro() {
+  const [user, setUser] = useState({
+    nome: "",
+    sobrenome: "",
+    email: "",
+    number: "",
+    password: "",
+    confirmPassword: ""
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:3001/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(user)
+      });
+
+      if (response.ok) {
+        // Handle successful registration
+        console.log("User registered successfully!");
+        window.location.href = "/home";
+      } else {
+        // Handle registration failure
+        console.error("Registration failed");
+      }
+    } catch (error) {
+      console.error("Error during registration:", error);
+    }
+  };
+
   return (
     <body>
       <Toolbar />
@@ -16,7 +56,7 @@ export default function Cadastro() {
           </div>
 
           <div className={styles.form}>
-            <form action="#">
+            <form onSubmit={handleFormSubmit} action="#">
               <div className={styles.formHeader}>
                 <div className={styles.title}>
                   <h1 className={styles.h1}>BEM-VINDO!</h1>
@@ -131,13 +171,13 @@ export default function Cadastro() {
                   ></input>
                 </div>
               </div>
-              <Link to={"/home"}>
-                <div className={styles.continueButton}>
-                  <button className={styles.continueButton__btn}>
-                    CONTINUE
-                  </button>
-                </div>
-              </Link>
+              <div className={styles.continueButton}>
+  <button type="submit" className={styles.continueButton__btn}>
+    CONTINUE
+  </button>
+</div>
+            
+         
             </form>
           </div>
         </div>

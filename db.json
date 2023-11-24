@@ -1,0 +1,12 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "nome": "Donisete",
+        "sobrenome": "Oliveira",
+        "email": "doniseteoliveira@gmail.com",
+        "number": "(14) 98803-2407",
+        "password": "senha123"
+      }
+    ]
+  }
