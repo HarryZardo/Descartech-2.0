@@ -4,35 +4,20 @@ import Footer from "../../components/Footer";
 import React, { useState, useEffect } from 'react';
 
 export default function Animais() {
-  const [checkboxes, setCheckboxes] = useState<Record<string, boolean>>({});
-  const [descartarSelecionado, setDescartarSelecionado] = useState(false);
-
-   // Informações pessoais fake
-   const fakeUserInfo = {
-    nome: 'Donisete',
-    sobrenome: 'Oliveira',
-    cpf: '',
-    email: 'doniseteoliveira@gmail.com',
-    number: '(14) 98803-2407',
-    city: '',
-    endereço: '',
-    bairro: '',
-    numero: '',
-    estado: '',
-  };
-
-  useEffect(() => {
-    // Preencher automaticamente os campos do formulário com as informações fake
-    document.getElementById('nome')?.setAttribute('value', fakeUserInfo.nome);
-    document.getElementById('sobrenome')?.setAttribute('value', fakeUserInfo.sobrenome);
-    document.getElementById('cpf')?.setAttribute('value', fakeUserInfo.cpf);
-    document.getElementById('email')?.setAttribute('value', fakeUserInfo.email);
-    document.getElementById('number')?.setAttribute('value', fakeUserInfo.number);
-    document.getElementById('city')?.setAttribute('value', fakeUserInfo.city);
-    document.getElementById('endereço')?.setAttribute('value', fakeUserInfo.endereço);
-    document.getElementById('bairro')?.setAttribute('value', fakeUserInfo.bairro);
-    document.getElementById('estado')?.setAttribute('value', fakeUserInfo.estado);
-  }, []); // Executar apenas uma vez ao montar o componente
+    const [checkboxes, setCheckboxes] = useState<Record<string, boolean>>({});
+    const [descartarSelecionado, setDescartarSelecionado] = useState(false);
+    const [formValues, setFormValues] = useState({
+      nome: 'Donisete',
+      sobrenome: 'Oliveira',
+      email: 'doniseteoliveira@gmail.com',
+      cpf: '',
+      city: '',
+      endereço: '',
+      bairro: '',
+      numero: '',
+      telefone: '(14) 98803-2407',
+      estado: '',
+    });
 
   const handleCheckboxChange = (id: string) => {
     setCheckboxes((prevCheckboxes) => ({
@@ -49,27 +34,35 @@ export default function Animais() {
       setCheckboxes({});
       setDescartarSelecionado(false);
 
-      document.getElementById('nome')?.setAttribute('value', 'Donisete');
-      document.getElementById('sobrenome')?.setAttribute('value', 'Oliveira');
-      document.getElementById('cpf')?.setAttribute('value', '');
-      document.getElementById('email')?.setAttribute('value', 'doniseteoliveira@gmail.com');
-      document.getElementById('number')?.setAttribute('value', '(14) 98803-2407');
-      document.getElementById('city')?.setAttribute('value', '');
-      document.getElementById('endereço')?.setAttribute('value', '');
-      document.getElementById('bairro')?.setAttribute('value', '');
-      document.getElementById('estado')?.setAttribute('value', '');
-
+      // Limpar os campos do formulário
+      setFormValues({
+        ...formValues,
+        cpf: '',
+        city: '',
+        endereço: '',
+        bairro: '',
+        numero: '',
+        estado: '',
+      });
     } else if (selectedCheckboxes.length > 0) {
       // Ação de enviar o formulário
-      setCheckboxes({});
+      setFormValues({
+        ...formValues,
+        cpf: '',
+        city: '',
+        endereço: '',
+        bairro: '',
+        numero: '',
+        estado: '',
+      });
 
-      
+      setCheckboxes({});
     } else {
       // Alerta quando nenhuma opção é selecionada
       alert('Por favor, selecione pelo menos uma opção antes de enviar.');
     }
   };
-  
+
   return (
     <div className={styles.back}>
       <Toolbar />
@@ -93,6 +86,7 @@ export default function Animais() {
             placeholder="Digite seu nome"
             required
             className={styles.inputBox__input}
+            value= {formValues.nome}  onChange={(e) => setFormValues({ ...formValues, nome: e.target.value })}
           ></input>
         </div>
 
@@ -108,6 +102,7 @@ export default function Animais() {
             placeholder="Digite seu sobrenome"
             required
             className={styles.inputBox__input}
+            value= {formValues.sobrenome}  onChange={(e) => setFormValues({ ...formValues, sobrenome: e.target.value })}
           ></input>
         </div>
 
@@ -123,6 +118,7 @@ export default function Animais() {
             placeholder="Digite seu cpf"
             required
             className={styles.inputBox__input}
+            value= {formValues.cpf}  onChange={(e) => setFormValues({ ...formValues, cpf: e.target.value })}
           ></input>
         </div>
 
@@ -138,6 +134,7 @@ export default function Animais() {
             placeholder="Digite seu email"
             required
             className={styles.inputBox__input}
+            value= {formValues.email}  onChange={(e) => setFormValues({ ...formValues, email: e.target.value })}
           ></input>
         </div>
 
@@ -153,6 +150,7 @@ export default function Animais() {
             placeholder="(xx) xxxxx-xxxx"
             required
             className={styles.inputBox__input}
+            value= {formValues.telefone}  onChange={(e) => setFormValues({ ...formValues, telefone: e.target.value })}
           ></input>
         </div>
 
@@ -168,6 +166,7 @@ export default function Animais() {
             placeholder="Digite sua Cidade"
             required
             className={styles.inputBox__input}
+            value= {formValues.city}  onChange={(e) => setFormValues({ ...formValues, city: e.target.value })}
           ></input>
         </div>
 
@@ -183,6 +182,7 @@ export default function Animais() {
             placeholder="Digite sua Endereço"
             required
             className={styles.inputBox__input}
+            value= {formValues.endereço}  onChange={(e) => setFormValues({ ...formValues, endereço: e.target.value })}
           ></input>
         </div>
 
@@ -198,6 +198,7 @@ export default function Animais() {
             placeholder="Digite sua Bairro"
             required
             className={styles.inputBox__input}
+            value= {formValues.bairro}  onChange={(e) => setFormValues({ ...formValues, bairro: e.target.value })}
           ></input>
         </div>
 
@@ -213,6 +214,7 @@ export default function Animais() {
             placeholder="Digite seu Número"
             required
             className={styles.inputBox__input}
+            value= {formValues.numero}  onChange={(e) => setFormValues({ ...formValues, numero: e.target.value })}
           ></input>
         </div>
 
@@ -228,6 +230,7 @@ export default function Animais() {
             placeholder="Digite seu Estado"
             required
             className={styles.inputBox__input}
+            value= {formValues.estado}  onChange={(e) => setFormValues({ ...formValues, estado: e.target.value })}
           ></input>
         </div>
 

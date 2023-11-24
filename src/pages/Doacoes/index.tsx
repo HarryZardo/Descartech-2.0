@@ -72,7 +72,7 @@ export default function Doacoes() {
             </div>
             <button
               className={styles.abrir_button}
-              onClick={() => handleOpenButtonClick("doniseteoliveira@gmail.com.com")}
+              onClick={() => handleOpenButtonClick("doniseteoliveira@gmail.com")}
             >
               Abrir
             </button>
