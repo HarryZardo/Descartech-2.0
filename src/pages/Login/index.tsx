@@ -75,10 +75,13 @@ export default function Login() {
                       onChange={handleChange}
                     ></input>
                   </div>
+<Link to={("/resetsenha")}>
+<h1 className={styles.esqueceuSenha}>Esqueceu a senha?</h1>
 
-                  <h1 className={styles.esqueceuSenha}>Esqueceu a senha?</h1>
-                </div>
 
+</Link>
+
+</div>
                 <Link to={"/cadastro"}>
                   <div className={styles.cadastroButton}>
                     <button className={styles.cadastroButton__btn}>

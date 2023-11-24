@@ -49,7 +49,7 @@ export default function Doacoes() {
               <ul>
                 <li>Monitor</li>
                 <li>Estabilizador</li>
-                <li>Notebook</li>
+                <li>Celular</li>
               </ul>
             </div>
             <button

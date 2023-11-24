@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.back{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b748a;
+
+}
+.container{
+    width: 70%;
+    height: 75%;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.start{
+    width: 50%;
+    padding: 3rem 3rem ;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+}
+.end{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color:#5C87AD;
+    border-radius: 10px;
+    background-image: linear-gradient( to right, #4C7190, transparent, #3C5A72);
+
+    img {
+        width: 90%;
+    }
+}
+.h1{
+    font-size: xx-large;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    margin-left: 2%;
+}
+.h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-image: linear-gradient( to right, #3C5A72, transparent);
+    margin: 2px auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0;
+    height: 40vh;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 60%;
+
+    &__input{
+        margin: 0.0rem 0;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px #0000001c;
+        height: 50px;
+        font-family: 'Roboto Slab', serif;
+    }
+    &__input:hover{
+        background-color: #85b3db;
+    }
+    &__input:focus-visible{
+        outline: 1px solid #6B9DC9;
+    }
+    &__input::placeholder{
+        color: #000000be;
+    }
+
+
+    &__label{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000000c0;
+        margin-bottom: 5px;
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+.esqueceuSenha{
+  margin-top: 30%;
+
+    font-family: cursive;
+    text-decoration:underline #182625;
+    color: #182625;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+.cadastroButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__btn{
+        width: 60%;
+        margin-top: 1rem;
+        border-style: solid;
+        border-width: 2px;
+        padding: 0.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 900;
+        font-family: 'Roboto Slab', serif;
+        background-color: white;
+        border-color: #2A4342;
+        color: #182625;
+        text-decoration: underline white;
+    }
+    &__btn:hover{
+        color: white;
+        border-color: #2A4342;
+        background-color: #182625;
+    }
+}
+
+.continueButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__btn{
+        width: 60%;
+        margin-top: 1rem;
+        padding: 0.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 900;
+        font-family: 'Roboto Slab', serif;
+        background-color: #182625;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #2A4342;
+        color: white;
+
+    }
+    &__btn:hover{
+        background-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #2A4342;
+        color: #182625;
+    }
+
+}
