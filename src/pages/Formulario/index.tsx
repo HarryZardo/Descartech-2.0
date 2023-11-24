@@ -48,9 +48,22 @@ export default function Animais() {
       alert('Enviado com sucesso');
       setCheckboxes({});
       setDescartarSelecionado(false);
+
+      document.getElementById('nome')?.setAttribute('value', 'Donisete');
+      document.getElementById('sobrenome')?.setAttribute('value', 'Oliveira');
+      document.getElementById('cpf')?.setAttribute('value', '');
+      document.getElementById('email')?.setAttribute('value', 'doniseteoliveira@gmail.com');
+      document.getElementById('number')?.setAttribute('value', '(14) 98803-2407');
+      document.getElementById('city')?.setAttribute('value', '');
+      document.getElementById('endereço')?.setAttribute('value', '');
+      document.getElementById('bairro')?.setAttribute('value', '');
+      document.getElementById('estado')?.setAttribute('value', '');
+
     } else if (selectedCheckboxes.length > 0) {
       // Ação de enviar o formulário
       setCheckboxes({});
+
+      
     } else {
       // Alerta quando nenhuma opção é selecionada
       alert('Por favor, selecione pelo menos uma opção antes de enviar.');
